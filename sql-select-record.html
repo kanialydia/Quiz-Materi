@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Select Record</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+  </head>
+  
+  <body class="size-1140">
+  	<!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/I.jpg" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/I.jpg" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+			<li><a>Material</a>
+			 <ul>
+				<li><a>BAB 1</a>
+					<ul>
+						<li><a href="sql-database.html">SQL DATABASE</a></li>
+						<li><a href="sql-tabel.html">SQL TABLE</a></li>
+						<li><a href="rule1.html">QUIZ BAB 1</a></li>
+					</ul>
+				</li>
+				<li><a>BAB 2</a>
+					<ul>
+						<li><a href="sql-select-record.html">SQL SELECT RECORD</a></li>
+						<li><a href="sql-where.html">SQL WHERE</a></li>
+						<li><a href="rule2.html">QUIZ BAB 2</a></li>
+					</ul>
+				</li>
+				<li><a>BAB 3</a>
+					<ul>
+						<li><a href="sql-alter-record.html">SQL ALTER RECORD</a></li>
+						<li><a href="sql-other-fuction.html">SQL OTHER FUNCTION</a></li>
+						<li><a href="rule3.html">QUIZ BAB 3</a></li>
+					</ul>
+				</li>
+				
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+			<li><a href="#"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <article>
+        <header class="section background-dark">
+          <div class="line">        
+		  <div class="right right-side">
+				<p><a class="button button-white-stroke s-12" href="sql-database.html">SQL DATABASE</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-tabel.html">SQL TABEL</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-select-record.html">SQL SELECT RECORD</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-where.html">SQL WHERE</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-alter-record.html">SQL ALTER RECORD</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-other-fuction.html">SQL OTHER FUCTION</a></p>
+			</div>
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">SELECT RECORD</h1>
+			<p>You Can Start Quiz BAB 2 Here!</p>
+			<div class="s-6 m-6 l-6" id="kuis"><br><br>
+				<p><a href="rule2.html" class="s-6 submit-form button background-primary text-white">START QUIZ</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-6" href="#page1">Start Reading</a></p>
+			</div>
+          </div>  
+        </header>
+        <section id="page1" class="s-12 m-10 l-8 center section background-white">
+          <div class="line">
+            <h2 class="text-size-40 margin-bottom-30">SELECT</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            <p class="h1 margin-bottom text-size-20">
+			SELECT pada sql berfungsi untuk menampilkan data baik secara keseluruhan atau hanya beberapa bagian saja. Kapan select digunakan ?. 
+			Select digunakan saat ingin menampilkan seluruh data hanya dengan sekali jalan tanpa harus membuka tabel dan melakukan load data lagi.<br>
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>SELECT * FROM tabel_nama; <br> SELECT kolom_nama,kolom_nama, … FROM tabel_nama;<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Contoh : Tabel ‘Data_Guru’
+			</p>
+			<div class="s-12 m-3 l-6 center">
+			<img src="img/tabel4.jpg" alt="">
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Jika menuliskan code dibawah ini:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>SELECT gu_nama,gu_matpel FROM Data_Guru;<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Maka akan muncul : 
+			</p>
+			<div class="s-12 m-4 l-4 center">
+			<img src="img/tabel5.jpg" alt=""><br><br><br><br>
+			</div>
+		 </div> 
+		 <div class="line">
+            <h2 class="text-size-40 margin-bottom-30">SELECT DISTINCT</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            <p class="h1 margin-bottom text-size-20">
+			Select distinct fungsinya adalah untuk menampilkan hasil query mysql jika ada row yang isinya sama, maka hanya akan diambil salah satu nya saja.
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>SELECT DISTINCT kolom_nama, … FROM tabel_nama;<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Contoh : Tetap Menggunakan Tabel yang sama
+			<br>Jika menuliskan code dibawah ini:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>SELECT DISTINCT gu_alamat FROM Data_Guru;<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Maka akan muncul : 
+			</p>
+			<div class="s-12 m-2 l-2 center">
+			<img src="img/tabel6.jpg" alt=""><br><br>
+			</div>
+			<div class="s-12 m-12 l-3 center" id="kuis"><br><br>
+				<p><a href="sql-where.html" class="s-12 submit-form button background-primary text-white">Next - SQL Where </a></p>
+			</div>
+		 </div>  	  
+        </section> 
+      </article>
+
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <p class="text-size-12">Copyright 2018, KELOMPOK IMK 2018</p>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>

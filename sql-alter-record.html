@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Select Record</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+  </head>
+  
+  <body class="size-1140">
+  	<!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/.jpg" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/.png" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+			<li><a>Material</a>
+			 <ul>
+				<li><a>BAB 1</a>
+					<ul>
+						<li><a href="sql-database.html">SQL DATABASE</a></li>
+						<li><a href="sql-tabel.html">SQL TABLE</a></li>
+						<li><a href="rule1.html">QUIZ BAB 1</a></li>
+					</ul>
+				</li>
+				<li><a>BAB 2</a>
+					<ul>
+						<li><a href="sql-select-record.html">SQL SELECT RECORD</a></li>
+						<li><a href="sql-where.html">SQL WHERE</a></li>
+						<li><a href="rule2.html">QUIZ BAB 2</a></li>
+					</ul>
+				</li>
+				<li><a>BAB 3</a>
+					<ul>
+						<li><a href="sql-alter-record.html">SQL ALTER RECORD</a></li>
+						<li><a href="sql-other-fuction.html">SQL OTHER FUNCTION</a></li>
+						<li><a href="rule3.html">rule1 BAB 3</a></li>
+					</ul>
+				</li>
+				
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+			<li><a href="#"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <article>
+        <header class="section background-dark">
+          <div class="line">        
+		  <div class="right right-side">
+				<p><a class="button button-white-stroke s-12" href="sql-database.html">SQL DATABASE</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-tabel.html">SQL TABEL</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-select-record.html">SQL SELECT RECORD</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-where.html">SQL WHERE</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-alter-record.html">SQL ALTER RECORD</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-other-fuction.html">SQL OTHER FUCTION</a></p>
+			</div>
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">SQL ALTER RECORD</h1>
+			<p>You Can Start Quiz BAB 3 Here!</p>
+			<div class="s-6 m-6 l-6" id="kuis"><br><br>
+				<p><a href="rule3.html" class="s-6 submit-form button background-primary text-white">START QUIZ</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-6" href="#page1">Start Reading</a></p>
+			</div>
+          </div>  
+        </header>
+        <section id="page1" class="s-12 m-10 l-8 center section background-white">
+          <div class="line">
+            <h2 class="text-size-40 margin-bottom-30">UPDATE</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            <p class="h1 margin-bottom text-size-20">
+			Perintah UPDATE digunakan untuk mengubah isi data pada satu atau beberapa kolom pada suatu tabel.<br>
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>UPDATE namatabel SET kolom1 = nilai1 WHERE kondisi;<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Perintah dalam tanda [] bersifat opsional untuk mengubah suatu baris dengan suatu kondisi tertentu. 
+			Berikut ini perintah untuk mengubah baris pada tabel kategori dengan data sebagai berikut :<br>
+			</p>
+			<div class="s-12 m-3 l-6 center">
+			<img src="img/tabel11.jpg" alt="">
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Contoh  :
+			<br>1.	Mengubah semua nilai pada kolom id_lokasi menjadi L001 :
+			<br>Syntax	:<br>
+			</p>
+			<div class="s-12 m-2 l-6 center">
+			<img src="img/s1.jpg" alt="">
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Maka akan muncul : 
+			</p>
+			<div class="s-12 m-4 l-4 center">
+			<img src="img/tabel12.jpg" alt=""><br><br><br><br>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			2.	Mengubah nilai pada kolom id_kategori menjadi 7 dimana nilai pada kolom jenis adalah agama :
+			<br>Syntax	:<br>
+			</p>
+			<div class="s-12 m-2 l-6 center">
+			<img src="img/s1.jpg" alt="">
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Maka akan muncul : 
+			</p>
+			<div class="s-12 m-3 l-3 center">
+			<img src="img/tabel13.jpg" alt=""><br><br><br><br>
+			</div>
+		 </div> 
+		 <div class="line">
+            <h2 class="text-size-40 margin-bottom-30">DELETE</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            <p class="h1 margin-bottom text-size-20">
+			Perintah DELETE digunakan untuk menghapus satu baris, baris dengan kondisi tertentu atau seluruh baris.
+			<br>Syntax<br> 
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-14 text-primary text-line-height-1"><br>DELETE FROM namatabel [WHERE kondisi];<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Perintah dalam tanda [] bersifat opsional untuk menghapus suatu baris dengan suatu kondisi tertentu. Berikut ini perintah untuk menghapus isi dari tabel inventarisperpus dengan data sebagai berikut :<br>
+			</p>
+			<div class="s-12 m-4 l-4 center">
+			<img src="img/tabel14.jpg" alt=""><br><br>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Contoh	:
+			<br>1.	Jika ingin menghapus baris yang memiliki nilai 1 pada kolom id_petugas pada tabel inventarisperpus maka perintahnya sebagai berikut :
+			<br>Syntax	:
+			</p>
+			<div class="s-12 m-4 l-4 center">
+			<img src="img/s3.jpg" alt=""><br><br>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Maka akan muncul : 
+			</p>
+			<div class="s-12 m-4 l-4 center">
+			<img src="img/tabel15.jpg" alt=""><br><br>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			2.	Jika ingin menghapus baris yang memiliki nilai B-0001 pada kolom id_inventaris pada tabel inventarisperpus maka perintahnya sebagai berikut :
+			<br>Syntax	:<br>
+			</p>
+			<div class="s-12 m-4 l-4 center">
+			<img src="img/s4.jpg" alt=""><br><br>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Maka akan muncul : 
+			</p>
+			<div class="s-12 m-4 l-4 center">
+			<img src="img/tabel16.jpg" alt=""><br><br>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			3.	Jika ingin menghapus seluruh nilai pada tabel inventarisperpus :
+			<br>Syntax	:<br>
+			</p>
+			<div class="s-12 m-4 l-4 center">
+			<img src="img/s5.jpg" alt=""><br><br>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Maka akan muncul : 
+			</p>
+			<div class="s-12 m-4 l-8 center">
+			<img src="img/tabel17.jpg" alt=""><br><br>
+			</div>
+			<div class="s-12 m-12 l-3 center" id="kuis"><br><br>
+				<p><a href="sql-other-fuction.html" class="s-12 submit-form button background-primary text-white">Next - SQL Other Function </a></p>
+			</div>
+		 </div> 	  
+        </section> 
+      </article>
+
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <p class="text-size-12">Copyright 2018, KELOMPOK IMK 2018</p>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>

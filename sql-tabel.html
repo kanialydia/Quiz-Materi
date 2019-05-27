@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Tabel</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+  </head>
+  
+  <body class="size-1140">
+  	<!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/I1.jpg" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/I1.jpg" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+			<li><a>Material</a>
+			 <ul>
+				<li><a>BAB 1</a>
+					<ul>
+						<li><a href="sql-database.html">SQL DATABASE</a></li>
+						<li><a href="sql-tabel.html">SQL TABLE</a></li>
+						<li><a href="rule1.html">QUIZ BAB 1</a></li>
+					</ul>
+				</li>
+				<li><a>BAB 2</a>
+					<ul>
+						<li><a href="sql-select-record.html">SQL SELECT RECORD</a></li>
+						<li><a href="sql-where.html">SQL WHERE</a></li>
+						<li><a href="rule2.html">QUIZ BAB 2</a></li>
+					</ul>
+				</li>
+				<li><a>BAB 3</a>
+					<ul>
+						<li><a href="sql-alter-record.html">SQL ALTER RECORD</a></li>
+						<li><a href="sql-other-fuction.html">SQL OTHER FUNCTION</a></li>
+						<li><a href="rule3.html">QUIZ BAB 3</a></li>
+					</ul>
+				</li>
+				
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+			<li><a href="#"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <article>
+        <header class="section background-dark">
+          <div class="line">        
+		  <div class="right right-side">
+				<p><a class="button button-white-stroke s-12" href="sql-database.html">SQL DATABASE</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-tabel.html">SQL TABEL</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-select-record.html">SQL SELECT RECORD</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-where.html">SQL WHERE</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-alter-record.html">SQL ALTER RECORD</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-12" href="sql-other-fuction.html">SQL OTHER FUCTION</a></p>
+			</div>
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">SQL TABEL</h1>
+			<p>You Can Start Quiz BAB 1 Here!</p>
+			<div class="s-6 m-6 l-6" id="kuis"><br><br>
+				<p><a href="rule1.html" class="s-6 submit-form button background-primary text-white">START QUIZ</a></p>
+				<br><br><br><p><a class="button button-white-stroke s-6" href="#page1">Start Reading</a></p>
+			</div>
+          </div>  
+        </header>
+        <section id="page1" class="s-12 m-10 l-8 center section background-white">
+		<div class="line">
+            <h2 class="text-size-40 margin-bottom-30">TABEL</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            <p class="h1 margin-bottom text-size-20">
+			Di dalam sebuah database dapat memiliki satu atau lebih tabel. Setiap tabel memiliki nama dan di dalam sebuah tabel terdapat banyak record. Berikut adalah contoh tabel Mahasiswa:<br>
+			</p>
+			<div class="s-12 m-3 l-6 center">
+			<img src="img/tabel1.jpg" alt="">
+			</div>
+			<p class="h1 margin-bottom text-size-20">Diatas adalah sebuah tabel mahasiswa yang memiliki 5 record yang terdiri dari data berdasarkan atribut tabel, seperti NIM, nama, dan angkatan.
+			<br>Untuk membuat tabel dengan SQL, gunakan sintaks berikut:
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">CREATE TABLE nama_tabel (<br>
+				   Atribut1 tipedata1,<br>
+				   Atribut2 tipedata2,<br>
+				   Atribut3 tipedata3,<br>
+				   …<br>
+				);<br>
+			</p>
+			</blockquote>
+			</p>
+			<p class="h1 margin-bottom text-size-20">
+			Sehingga untuk membuat tabel mahasiswa dengan atribut NIM, Nama, dan Angkatan, maka sintaks yang perlu digunakan adalah:<br>
+			</p>
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">CREATE TABLE mahasiswa (<br>
+				   NIM VARCHAR(10),<br>
+				   Nama VARCHAR(25),<br>
+				   Angkatan INTEGER<br>
+				);<br>
+			</p>
+			</blockquote>
+			<p class="h1 margin-bottom text-size-20">
+			Jika sintaks diatas dijalankan, maka akan terbentuk tabel kosong seperti berikut:
+			<div class="s-12 m-2 l-2 center">
+			<img src="img/tabel2.jpg" alt="">
+			</div>
+			</p>
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">NOTE :</p>
+			<p class="h1 margin-bottom text-size-20">Ada banyak tipe data yang dapat digunakan di SQL, namun yang paling umum digunakan adalah Int, Real, Boolean, Char, Varchar (ini sama dengan string), Time (jam, menit, detik), Date (Tahun, Bulan, Hari) dan Timestamp (tahun, bulan, hari, jam, menit, detik). 
+			Untuk tipe data varchar juga ditulis berapa jumlah karakter maksimal nya. 
+			(Pada contoh terdapat definisi atribut “NIM varchar(10)” yang berarti NIM hanya dapat diisi oleh string maksimal 10 karakter)<br>
+			</blockquote>
+			<p class="h1 margin-bottom text-size-20">
+			Kita juga dapat menambahkan, menghapus, dan mengubah tipe data atribut pada sebuah tabel yang sudah dibuat. Untuk menambahkan atribut, gunakan sintaks berikut:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE nama_tabel ADD nama_atribut tipe_data_atribut<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Untuk menghapus atribut, gunakan:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE nama_tabel DROP nama_atribut tipe_data_atribut<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Sedangkan untuk mengubah tipe data atribut, sintaks yang digunakan bergantung pada aplikasi yang digunakan:
+			<br>SQL Server / MS Access:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE nama_tabel ALTER COLUMN nama_atribut tipe_data_atribut<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			My SQL / Oracle sebelum versi 10G:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE nama_tabel MODIFY COLUMN nama_atribut tipe_data_atribut<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Oracle 10G dan kedepannya:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE nama_tabel MODIFY nama_atribut tipe_data_atribut<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Sebagai contoh jika kita mempunyai tabel mahasiswa seperti diatas dan menjalankan sintaks berikut:
+			</p>
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">ALTER TABLE mahasiswa ADD IPK INT;
+				<br>ALTER TABLE mahasiswa DROP angkatan;
+				<br>ALTER TABLE mahasiswa MODIFY COLUMN Nama(50);
+				<br>
+			</p>
+			</blockquote>
+			<p class="h1 margin-bottom text-size-20">
+			Maka tabel mahasiswa akan menjadi seperti ini:
+			<div class="s-12 m-2 l-2 center">
+			<img src="img/tabel3.jpg" alt=""><br>
+			</div>
+			</p>
+			<p class="h1 margin-bottom text-size-20">
+			Atribut IPK ditambahkan di tabel mahasiswa dan atribut angkatan dihapus. Lalu tipe data Nama diubah dari varchar(25) menjadi varchar(50).
+			<br>Jika kita tidak memerlukan sebuah tabel lagi, maka kita dapat menghapus sebuah tabel tersebut dengan sintaks:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>DROP TABLE nama_tabel<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Berarti jika kita ingin menghapus tabel mahasiswa, maka kita dapat menulis:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>DROP TABLE mahasiswa<br><br></p>
+			</div>
+			
+		 </div>
+		<div class="line">
+            <h2 class="text-size-40 margin-bottom-30">PRIMARY DAN FOREIGN KEY</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            <p class="h1 margin-bottom text-size-20">
+			Di dalam sebuah tabel sangat mungkin terdapat dua atau lebih record.<br>
+			Untuk membedakan satu record dengan yang lainnya, dibutuhkan nilai dalam record yang unik untuk mengidentifikasi setiap record.
+			<br>Nilai ini adalah PRIMARY KEY, atribut tabel yang nilai di setiap record selalu unik agar setiap record dapat teridentifikasi
+			<br>Sebuah tabel hanya boleh memiliki satu Primary Key.
+			<br>Untuk membuat atribut1 menjadi primary key pada sebuah tabel, maka sintaks yang digunakan adalah:
+			<br>
+			</p>
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">
+			CREATE nama_tabel (<br>
+			   Atribut1 Tipe_data1 PRIMARY KEY,<br>
+			   Atribut2 Tipe_data2,<br>
+			   Atribut2 Tipe_data2,<br>
+			   .....   <br>
+			   AtributN Tipe_data_n<br>
+			);<br>
+			</p>
+			</blockquote>
+			<p class="h1 margin-bottom text-size-20">Dalam MySQL sintaks yang digunakan sedikit berbeda, yaitu:
+			</p>
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">
+			CREATE nama_tabel (<br>
+			   Atribut1 Tipe_data,<br>
+			   Atribut2 Tipe_data2,<br>
+			   Atribut2 Tipe_data2,<br>
+			   .....   <br>
+			   AtributN Tipe_data_n<br>
+			   PRIMARY KEY (Atribut1)<br>
+			);<br>
+			</p>
+			</blockquote>
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">NOTE :</p>
+			<p class="h1 margin-bottom text-size-20">Pada sintaks diatas Atribut pertama menjadi primaty key, namun sebenarnya primary key tidak harus di atribut pertama. Primary key pada sebuah tabel bisa atribut apapun, asalkan hanya satu.<br>
+			</blockquote>
+			<p class="h1 margin-bottom text-size-20">
+			Jika kita ingin membuat tabel mahasiswa dengan atribut NIM, nama, dan angkatan dengan NIM adalah primary key, maka code yang ditulis adalah:<br>
+			</p>
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">
+			CREATE TABLE mahasiswa(<br>
+			   NIM VARCHAR(10) PRIMARY KEY,<br>
+			   Nama VARCHAR(30),<br>
+			   Angkatan YEAR<br>
+			);<br>
+			</p>
+			</blockquote>
+			<p class="h1 margin-bottom text-size-20">
+			Berikut adalah tabel yang terbentuk:
+			<div class="s-12 m-2 l-2 center">
+			<img src="img/tbl1.jpg" alt="">
+			</div>
+			</p>
+			<p class="h1 margin-bottom text-size-20">
+			Perhatikan tabel mahasiswa yang telah diisi dengan dua record di bawah ini
+			<div class="s-12 m-2 l-2 center">
+			<img src="img/tbl2.jpg" alt="">
+			</div>
+			</p>
+			<p class="h1 margin-bottom text-size-20">
+			Dalam tabel mahasiswa boleh terdapat 2 record dengan nilai atribut Nama yang sama, karena atribut Nama bukan primary key sehingga Nama tidak perlu unik. Namun disaat kita ingin mengisi tabel dengan record baru NIM=1, Nama=”Ahmad”, Angkatan=”2018”, terjadi error karena sudah ada record dengan nilai NIM=1 dan NIM adalah primary key sehingga record barusan tidak bisa dimasukkan ke tabel.
+			<div class="s-12 m-12 l-3 center">
+			<img src="img/tbl3.jpg" alt="">
+			</div>
+			</p>
+			<p class="h1 margin-bottom text-size-20">
+			Untuk membuat atribut pada tabel yang sudah ada menjadi primary key, gunakan sintaks:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE nama_tabel ADD PRIMARY KEY (nama_atribut);<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Untuk menghapus primary key pada tabel, gunakan sintaks:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE nama_tabel DROP PRIMARY KEY;<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Foreign key digunakan untuk menghubungkan dua tabel.
+			<br>Foreign key adalah atribut tabel yang merujuk pada primary key tabel lain.
+			<br>Tabel yang mengandung sebuah foreign key disebut tabel child, dan tabel yang mengandung primary key yang dijadikan foreign key disebut tabel parent.
+			<br>Perhatikan kedua tabel ini:
+			<br>Tabel Mahasiswa
+			<br>
+			</p>
+			<div class="s-12 m-12 l-7 center">
+			<img src="img/tbl4.jpg" alt="">
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Tabel Dosen
+			</p>
+			<div class="s-12 m-12 l-7 center">
+			<img src="img/tbl5.jpg" alt="">
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Pada tabel mahasiswa terdapat atribut FOREIGN KEY Dosen Wali yang merujuk pada PRIMARY KEY NIP di tabel Dosen. Untuk membuat tabel mahasiswa yang memiliki foreign key, maka code yang perlu ditulis adalah:<br>
+			</p>
+			<blockquote class="margin-top-bottom-20">
+			<p class="h1 margin-bottom text-size-20 text-primary text-line-height-1">
+			CREATE TABLE Mahasiswa (<br>
+			   NIM VARCHAR(4) PRIMARY KEY,<br>
+			   Nama VARCHAR(20),<br>
+			   Dosen_Wali VARCHAR(4) FOREIGN KEY REFERENCES Dosen(NIP)<br>
+			);<br>
+			</p>
+			</blockquote>
+			<p class="h1 margin-bottom text-size-20">
+			Jika misalkan tabel mahasiswa dan dosen sudah ada namun atribut Dosen Wali pada mahasiswa masih belum menjadi foreign key, maka code ini dapat membuat atribut tersebut menjadi foreign key:
+			</p>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE mahasiswa ADD FOREIGN KEY (Dosen_Wali) REFERENCES Dosen(NIP);<br><br></p>
+			</div>
+			<p class="h1 margin-bottom text-size-20">
+			Untuk menghapus foreign key pada tabel mahasiswa, gunakan code:<br>
+			<div class="s-12 m-12 l-7 center text-center">
+                 <p class="h1 text-size-16 text-primary text-line-height-1"><br>ALTER TABLE mahasiswa DROP FOREIGN KEY Dosen_Wali;<br><br></p>
+			</div>
+			</p>
+			<div class="s-12 m-12 l-3 center" id="kuis"><br><br>
+				<p><a href="sql-database.html" class="s-12 submit-form button background-primary text-white">Previous - SQL Database </a></p>
+			</div>
+		 </div>			  
+        </section> 
+      </article>
+
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <p class="text-size-12">Copyright 2018, KELOMPOK IMK 2018</p>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>
